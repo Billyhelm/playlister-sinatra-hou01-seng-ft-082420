@@ -1,0 +1,5 @@
+<h1>Songs app</h1>
+
+<% @songs.each do |song| %>
+<a href="/songs/<%=song.slug%>"><li><%= song.name %> </li></a>
+<% end %>
